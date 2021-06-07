@@ -1,4 +1,12 @@
-const CreateBot = require("../Utils/Bot");
+const cron = require('node-cron')
+
+const CreateBot = require("../Utils/Bot")
+
+const Monday = require('../Modules/Monday')
+const Wednesday = require('../Modules/Wednesday')
+const Friday = require('../Modules/Friday')
+const Saturday = require('../Modules/Saturday')
+
 
 bot = new CreateBot().bot
 

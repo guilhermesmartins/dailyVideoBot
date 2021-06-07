@@ -16,3 +16,5 @@ class Friday {
         return this.media;
     }
 }
+
+module.exports = Friday

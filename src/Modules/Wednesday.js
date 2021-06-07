@@ -12,3 +12,5 @@ class Wednesday {
         return this.media;
     }
 }
+
+module.exports = Wednesday
