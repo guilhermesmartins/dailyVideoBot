@@ -1,12 +1,12 @@
 class Saturday {
     media
     media_data = {
-        0: '../../static/img/alone_saturday_night.png',
-        1: '../../static/img/alone_saturday_night_cosplay.jpg'
+        0: 'https://i.imgur.com/M4F0153.png',
+        1: 'https://i.imgur.com/g1OOfKD.jpg'
     }
 
     constructor() {
-        whichMedia = Math.round(Math.random())
+        const whichMedia = Math.round(Math.random())
         this.media = this.media_data[whichMedia]
     }
 

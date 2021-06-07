@@ -1,7 +1,7 @@
 class Wednesday {
     media;
     media_data = {
-        0: '../../static/videos/wednesday.mp4'
+        0: 'https://i.imgur.com/iefnQbl.mp4'
     }
 
     constructor() {
