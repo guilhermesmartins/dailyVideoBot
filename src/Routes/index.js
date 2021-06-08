@@ -16,13 +16,13 @@ bot.start(ctx => {
     ctx.replyWithVideo('https://i.imgur.com/bLO2rds.gif')
 
     //Monday
-    cron.schedule('0 9 * * 1', () => {
+    cron.schedule('0 12 * * 1', () => {
         const monday = new Monday()
         ctx.replyWithVideo(monday.getMedia())
     })
 
     //Wednesday
-    cron.schedule('0 9 * * 3', () => {
+    cron.schedule('0 12 * * 3', () => {
         const wednesday = new Wednesday()
     
         const itsVideo = wednesday.getMedia().search('.mp4')
@@ -35,14 +35,14 @@ bot.start(ctx => {
         ctx.replyWithPhoto(wednesday.getMedia())    
     })
     //Friday
-    cron.schedule('0 18 * * 5', () => {
+    cron.schedule('0 21 * * 5', () => {
         const friday = new Friday()
 
         ctx.replyWithVideo(friday.getMedia())    
     })
 
     //Saturday
-    cron.schedule('0 19 * * 6', () => {
+    cron.schedule('0 22 * * 6', () => {
         const saturday = new Saturday()
 
         ctx.replyWithPhoto(saturday.getMedia())    
