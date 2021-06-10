@@ -1,12 +1,12 @@
 class Monday {
     media
-    media_data = {
-        0: 'https://i.imgur.com/sareEUE.mp4',
-        1: 'https://i.imgur.com/fbz02Ge.mp4'
-    }
+    media_data = [
+        'https://i.imgur.com/sareEUE.mp4',
+        'https://i.imgur.com/fbz02Ge.mp4'
+    ]
 
     constructor() {
-        const whichMedia = Math.round(Math.random())
+        const whichMedia = Math.round(Math.random() * this.media_data.length)
         this.media = this.media_data[whichMedia]
     }
 
